@@ -3,7 +3,11 @@ const router = express.Router();
 
 
 router.get('',(req,res)=>{
-    res.render('index')
+    const locals = {
+        title: "TesterOps Home Page",
+        description: "My Sample Blog with NodeJS, Express and MongoDB"
+    }
+    res.render('index',{locals})
 });
 
 
