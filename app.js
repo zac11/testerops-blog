@@ -8,6 +8,9 @@ const PORT = 4999 || process.env.PORT;
 
 connectDB();
 
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
+
 app.use(express.static('public'))
 
 // Templating Engine

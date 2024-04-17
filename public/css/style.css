@@ -39,9 +39,9 @@ h3{
 
 
 input[type="text"],
-input[type="text"],
-input[type="text"],
-input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
 select,
 textarea {
     font-family: "Raleway", sans-serif;
@@ -312,7 +312,7 @@ img {
     visibility: hidden;
     transform: translateY(-100px);
     background-color: var(--black);
-    padding: 4px 0;
+    padding: 15px 0;
     position: absolute;
     left: 0;
     right: 0;
@@ -326,8 +326,10 @@ img {
 }
 
 .searchBar input{
+    position: relative;
     margin: 0;
     padding: 0;
+  
 }
 
 #searchClose{
